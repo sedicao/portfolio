@@ -15,8 +15,9 @@
  *  07. intro
  *  08. discography
  *  09. about
- *  10. modal
- *  11. footer
+ *  10. videos
+ *  11. modal
+ *  12. footer
  *
  * =================================================================== 
  */
@@ -61,6 +62,7 @@
    font-size: 5.1rem;
 	line-height: 1.355;
 	letter-spacing: -.1rem;
+   text-shadow: var(--tertiary-color) 1px 1px 10px;
  }
 
  h2 {
@@ -279,6 +281,18 @@
    background-color: var(--primary-color);
  }
 
+ @media screen and (max-width: 375px) {
+   #logo {
+      height: 36px;
+      width: 135.67;
+   }
+
+   .header-logo {
+      display: flex;
+      justify-content: center;
+   }
+}
+
  /** 
  * ===================================================================
  * 07 - intro
@@ -317,6 +331,22 @@
     }
    .presentation::after {
       display: none;
+   }
+}
+
+@media screen and (max-width: 375px) {
+   .intro-content {
+      text-align: center;
+      margin-left: -24px;
+      width: 100vw;
+   }
+
+   .presentation {
+      background-image: url("../img/cover mobile.png");
+   }
+
+   h1 {
+      font-size: 4.1rem;
    }
 }
 
@@ -369,6 +399,18 @@
    overflow: hidden;
  }
 
+
+ /** 
+ * ===================================================================
+ * 10 - videos
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+ .videos {
+    overflow: hidden;
+ }
+
  /** 
  * ===================================================================
  * 11 - modal
@@ -413,7 +455,7 @@
 
  /** 
  * ===================================================================
- * 11 - footer
+ * 12 - footer
  *
  * ------------------------------------------------------------------- 
  */
