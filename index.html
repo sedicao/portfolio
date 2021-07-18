@@ -96,7 +96,9 @@
         <div bp="container grid vertical-center">
           <div class="intro-content">
             <h1 class="txt-light">Sedição</h1>
-            <button onclick="Modal.toggleModal()"><span class="txt-large"><i class="fas fa-play txt-large" bp="padding-right--sm"></i>Ouvir agora</span></button>
+            <div class="pulsing-button">
+            </div>
+            <button onclick="Modal.streaming('profile')"><span class="txt-large"><i class="fas fa-play txt-large" bp="padding-right--sm"></i>Ouvir agora</span></button>
             <h4 class="txt-light">Disponível em:</h4>
 
             <div>
@@ -149,8 +151,8 @@
         </div>
       </section>
 
-      <section bp="padding-left--lg">
-        <div bp="container grid center">
+      <section class="link-intro" bp="flex padding-left--lg">
+        <div bp="container">
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="43" viewBox="0 0 100 43">
             <path data-name="link" d="M50,0l50,43H0Z" transform="translate(100 43) rotate(180)" fill="#E0CABA" />
           </svg>
@@ -162,63 +164,73 @@
         <div bp="container">
           <h2>Discografia</h2>
 
-          <ul>
-            <li bp="grid float-left 2--max">
+          <ul bp="grid 6@md 3@lg">
+            <li>
               <div class="card_album">
-                <a href="#" title="Plebiscito Letal" target="_blank">
-                  <figure class="album">
-                    <img src="./assets/img/album 1.jpeg" title="Plebiscito Letal">
-                    <figcaption>Plebiscito Letalt</figcaption>
-                  </figure>
-                </a>
+                <div class="justify-center">
+                  <a href="javascript:;" title="Plebiscito Letal" onclick="Modal.streaming('album5')">
+                    <figure class="album">
+                      <img src="./assets/img/album 5.jpeg" title="Plebiscito Letal">
+                      <figcaption>Plebiscito Letalt</figcaption>
+                    </figure>
+                  </a>
+                </div>
                 <h5>Plebiscito Letal</h5>
                 <h6>2020</h6>
               </div>
             </li>
-            <li bp="grid float-left 2--max">
+            <li>
               <div class="card_album">
-                <a href="#" title="Justiça Medieval" target="_blank">
-                  <figure class="album">
-                    <img src="./assets/img/album 2.jpeg" title="Justiça Medieval">
-                    <figcaption>Justiça Medievalt</figcaption>
-                  </figure>
-                </a>
+                <div class="justify-center">
+                  <a href="javascript:;" title="Justiça Medieval" onclick="Modal.streaming('album4')">
+                    <figure class="album">
+                      <img src="./assets/img/album 4.jpeg" title="Justiça Medieval">
+                      <figcaption>Justiça Medievalt</figcaption>
+                    </figure>
+                  </a>
+                </div>
                 <h5>Justiça Medieval</h5>
                 <h6>2020</h6>
               </div>
             </li>
-            <li bp="grid float-left 2--max">
+            <li>
               <div class="card_album">
-                <a href="#" title="Faraós Fazem Festas" target="_blank">
-                  <figure class="album">
-                    <img src="./assets/img/album 3.jpeg" title="Faraós Fazem Festas">
-                    <figcaption>Faraós Fazem Festast</figcaption>
-                  </figure>
-                </a>
+                <div class="justify-center">
+                  <a href="javascript:;" title="Faraós Fazem Festas" onclick="Modal.streaming('album3')">
+                    <figure class="album">
+                      <img src="./assets/img/album 3.jpeg" title="Faraós Fazem Festas">
+                      <figcaption>Faraós Fazem Festast</figcaption>
+                    </figure>
+                  </a>
+                </div>
                 <h5>Faraós Fazem Festas</h5>
                 <h6>2018</h6>
               </div>
             </li>
-            <li bp="grid float-left 2--max">
+            <li>
               <div class="card_album">
-                <a href="#" title="Quebra Política" target="_blank">
-                  <figure class="album">
-                    <img src="./assets/img/album 4.jpeg" title="Quebra Política">
-                    <figcaption>Quebra Políticat</figcaption>
-                  </figure>
-                </a>
+                <div class="justify-center">
+                  <a href="javascript:;" title="Quebra Política" onclick="Modal.streaming('album2')">
+                    <figure class="album">
+                      <img src="./assets/img/album 2.jpeg" title="Quebra Política">
+                      <figcaption>Quebra Políticat</figcaption>
+                    </figure>
+                  </a>
+                </div>
                 <h5>Quebra Política</h5>
                 <h6>2018</h6>
               </div>
             </li>
-            <li bp="grid float-left 2--max">
+            <li>
               <div class="card_album">
-                <a href="#" title="Em Combate" target="_blank">
-                  <figure class="album">
-                    <img src="./assets/img/album 5.jpeg" title="Em Combate">
-                    <figcaption>Em Combatet</figcaption>
-                  </figure>
-                </a>
+                <div class="justify-center">
+                  <a href="javascript:;" title="Em Combate" onclick="Modal.streaming('album1')">
+                    <figure class="album">
+                      <img src="./assets/img/album 1.jpeg" title="Em Combate">
+                      <figcaption>Em Combatet</figcaption>
+                    </figure>
+                  </a>
+                </div>
                 <h5>Em Combate</h5>
                 <h6>2017</h6>
               </div>
@@ -231,33 +243,35 @@
       <section class="about" bp="flex padding--lg">
         <div bp="container">
           <h2>Biografia</h2>
-          <div bp="float-left 10--max">
-            <p>
-              Contundente nas palavras e com informação nas rimas, Sedição traz denúncias fortes e muita militância em
-              suas composições. Sedição tem um significado forte: sublevação contra qualquer autoridade constituída.
-            </p>
-            <p>
-              Com ideais libertários, já foi ativista e contribuinte no Movimento Jovem Negro Vivo, pela Anistia
-              Internacional, que hoje tem sede no Rio de Janeiro.
-            </p>
-            <p>
-              Em Outubro de 2016, realizou seu primeiro show em parceria com Protesto Intensivo em uma ação beneficente
-              para o dia das crianças, que contava com atrações de peso no RAP Nacional, como Ndee Naldinho, Eduardo
-              (Ex-Facção Central), Trilha Sonora do Gueto, e outros convidados em uma noite especial.
-            </p>
-            <p>
-              Sedição lança seu primeiro álbum que tem a necropolítica como tema central, no dia dos finados em um mês de
-              eleição. Foi produzido com o propósito de conscientizar politicamente as pessoas sobre as causas e efeitos
-              da escolha de seus representantes e como uma estrutura politica negligente pode desencadear um colapso
-              social.
-            </p>
-          </div>
-          <div bp="float-left 2--max">
-            <div bp="grid">
-              <div class="avatar">
-                <img
-                  src="https://yt3.ggpht.com/ytc/AKedOLRU4_Eecd4XaS0yjrpyN43h24P5mlNLx4cVJanoRQ=s176-c-k-c0x00ffffff-no-rj"
-                  title="Sedição - Perfil" alt="Sedição Perfil" />
+          <div bp="grid">
+            <div bp="9@md">
+              <p>
+                Contundente nas palavras e com informação nas rimas, Sedição traz denúncias fortes e muita militância em
+                suas composições. Sedição tem um significado forte: sublevação contra qualquer autoridade constituída.
+              </p>
+              <p>
+                Com ideais libertários, já foi ativista e contribuinte no Movimento Jovem Negro Vivo, pela Anistia
+                Internacional, que hoje tem sede no Rio de Janeiro.
+              </p>
+              <p>
+                Em Outubro de 2016, realizou seu primeiro show em parceria com Protesto Intensivo em uma ação beneficente
+                para o dia das crianças, que contava com atrações de peso no RAP Nacional, como Ndee Naldinho, Eduardo
+                (Ex-Facção Central), Trilha Sonora do Gueto, e outros convidados em uma noite especial.
+              </p>
+              <p>
+                Sedição lança seu primeiro álbum que tem a necropolítica como tema central, no dia dos finados em um mês de
+                eleição. Foi produzido com o propósito de conscientizar politicamente as pessoas sobre as causas e efeitos
+                da escolha de seus representantes e como uma estrutura politica negligente pode desencadear um colapso
+                social.
+              </p>
+            </div>
+            <div bp="3@md">
+              <div bp="grid">
+                <div class="avatar">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AKedOLRU4_Eecd4XaS0yjrpyN43h24P5mlNLx4cVJanoRQ=s176-c-k-c0x00ffffff-no-rj"
+                    title="Sedição - Perfil" alt="Sedição Perfil" />
+                </div>
               </div>
             </div>
           </div>
@@ -270,29 +284,31 @@
 
           <h2>Vídeos</h2>
 
-          <div bp="grid float-left 4--max">
-            <iframe src="https://www.youtube.com/embed/PHsscQFT42A" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+          <div bp="grid 12 6@md 4@lg">
+            <div class="i-container">
+              <iframe src="https://www.youtube.com/embed/PHsscQFT42A" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-          </div>
+            </div>
 
-          <div bp="grid float-left 4--max">
-            <iframe src="https://www.youtube.com/embed/grn_i3XfzoA" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
+            <div class="i-container">
+              <iframe src="https://www.youtube.com/embed/grn_i3XfzoA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
 
-          <div bp="grid float-left 4--max">
-            <iframe src="https://www.youtube.com/embed/SIJrKsOfZKg" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
+            <div class="i-container">
+              <iframe src="https://www.youtube.com/embed/SIJrKsOfZKg" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
 
-          <div bp="grid float-left 4--max">
-            <iframe src="https://www.youtube.com/embed/kVMoHhR-zjw" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+            <div class="i-container">
+              <iframe src="https://www.youtube.com/embed/kVMoHhR-zjw" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -328,10 +344,10 @@
             </svg>
           </div>
           <h2 class="text-center txt-large-x" bp="margin-top--sm margin-bottom--sm">Escolha o serviço de sua preferência</h2>
-
+          <h3 id="service_title" class="text-center">Sedição</h3>
           <ul bp="grid" class="streaming_service">
             <li bp="6@md offset-4@md">
-              <a href="https://www.youtube.com/c/SediçãoRAP?sub_confirmation=1" title="Ouça no Youtube" target="_blank">
+              <a id="streaming_youtube" href="https://www.youtube.com/c/SediçãoRAP?sub_confirmation=1" title="Ouça no Youtube" target="_blank">
                 <div class="bg-red justify-center" bp="padding--lg">
                     <span class="txt-large">
                       <i class="fab fa-youtube txt-large" bp="padding-right--sm"></i>
@@ -341,7 +357,7 @@
               </a>
             </li>
             <li bp="6@md offset-4@md">
-              <a href="https://open.spotify.com/artist/7aGnJ2YGswxW8UdixHbcP3" title="Ouça no Spotify" target="_blank">
+              <a id="streaming_spotify" href="https://open.spotify.com/artist/7aGnJ2YGswxW8UdixHbcP3" title="Ouça no Spotify" target="_blank">
                 <div class="bg-green justify-center" bp="padding--lg">
                   <span class="txt-large">
                     <i class="fab fa-spotify txt-large" bp="padding-right--sm"></i>
@@ -351,7 +367,7 @@
               </a>
             </li>
             <li bp="6@md offset-4@md">
-              <a href="https://music.apple.com/us/artist/sedicao/1471144048" title="Ouça no Apple Music" target="_blank">
+              <a id="streaming_apple" href="https://music.apple.com/us/artist/sedicao/1471144048" title="Ouça no Apple Music" target="_blank">
                 <div class="bg-grey justify-center" bp="padding--lg">
                   <span class="txt-large">
                     <i class="fab fa-apple txt-large" bp="padding-right--sm"></i>
@@ -361,7 +377,7 @@
               </a>
             </li>
             <li bp="6@md offset-4@md">
-              <a href="https://www.deezer.com/br/artist/12822487" title="Ouça no Deezer" target="_blank">
+              <a id="streaming_deezer" href="https://www.deezer.com/br/artist/12822487" title="Ouça no Deezer" target="_blank">
                 <div class="bg-blue justify-center" bp="padding--lg">
                     <span class="txt-large">
                       <i class="fab fa-deezer txt-large" bp="padding-right--sm"></i>
@@ -371,7 +387,7 @@
               </a>
             </li>
             <li bp="6@md offset-4@md">
-              <a href="https://music.amazon.com.br/artists/B07TWJ98HW/sedição" title="Ouça na Amazon Music" target="_blank">
+              <a id="streaming_amazon" href="https://music.amazon.com.br/artists/B07TWJ98HW/sedição" title="Ouça na Amazon Music" target="_blank">
                 <div class="bg-orange justify-center" bp="padding--lg">
                     <span class="txt-large">
                       <i class="fab fa-amazon txt-large" bp="padding-right--sm"></i>
@@ -381,7 +397,7 @@
               </a>
             </li>
             <li bp="6@md offset-4@md">
-              <a href="https://listen.tidal.com/artist/16181550" title="Ouça no Tidal" target="_blank">
+              <a id="streaming_tidal" href="https://listen.tidal.com/artist/16181550" title="Ouça no Tidal" target="_blank">
                 <div class="bg-black justify-center" bp="padding--lg">
                   <svg xmlns="http://www.w3.org/2000/svg" bp="padding-right--sm" width="20.999" height="14" viewBox="0 0 35.999 24">
                     <g id="g544" transform="translate(0 0)">
