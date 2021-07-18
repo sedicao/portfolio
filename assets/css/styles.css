@@ -161,6 +161,7 @@
  .txt-sm, .txt-normal, .txt-medium, .txt-large, .txt-large-x {
    margin: 0;
    padding: 0;
+   line-height: 1.5;
  }
 
  .txt-primary {
