@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sedicao.github.io/sitemap.xml
