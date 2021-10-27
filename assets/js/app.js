@@ -3,10 +3,27 @@ class Modal {
         modal.style.display = modal.style.display == 'flex' ? 'none' : 'flex'
     }
 
+    static handleURL() {
+        const redirect = window.location.hash;
+        const keys = {
+            amor_fati: 'album6',
+            plebiscito_letal: 'album5',
+            justica_medieval: 'album4',
+            faraos_fazem_festas: 'album3',
+            quebra_politica: 'album2',
+            em_combate: 'album1',
+            sedicao: 'profile'
+        }
+        const product = keys[redirect?.replace('#', '')] ?? 'profile'
+
+        this.streaming(product);
+    }
+
     static streaming(product) {
         const products = {
             profile: {
                 title: 'Sedição',
+                cover: 'https://yt3.ggpht.com/ytc/AKedOLRU4_Eecd4XaS0yjrpyN43h24P5mlNLx4cVJanoRQ=s176-c-k-c0x00ffffff-no-rj',
                 youtube: 'https://www.youtube.com/c/SediçãoRAP?sub_confirmation=1',
                 spotify: 'https://open.spotify.com/artist/7aGnJ2YGswxW8UdixHbcP3',
                 apple: 'https://music.apple.com/us/artist/sedicao/1471144048',
@@ -14,8 +31,19 @@ class Modal {
                 amazon: 'https://music.amazon.com.br/artists/B07TWJ98HW/sedição',
                 tidal: 'https://listen.tidal.com/artist/16181550',
             },
+            album6: {
+                title: 'Amor Fati',
+                cover: 'assets/img/album-6.jpeg',
+                youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mcOyGUii9-yVZ00iOagjzQ6fa5keriLEY',
+                spotify: 'https://open.spotify.com/album/2zCBWSDsIYw3zirPF6hjRa',
+                apple: 'https://music.apple.com/br/album/amor-fati-single/1591751540?l=en',
+                deezer: 'https://www.deezer.com/br/album/267732532',
+                amazon: 'https://music.amazon.com.br/albums/B09K5WLYT2',
+                tidal: 'https://listen.tidal.com/album/202302905',
+            },
             album5: {
                 title: 'Plebiscito Letal',
+                cover: 'assets/img/album-5.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=fZ9cD7dprUA&list=OLAK5uy_nqWXjF9exmD3uGH0Q1YNG36myR3d9H9hg',
                 spotify: 'https://open.spotify.com/album/79Fiy6s7qzGZaUOZnmH37u?si=BabIyXxrRFeX5wZUZT-IEA&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/plebiscito-letal/1537421460',
@@ -25,6 +53,7 @@ class Modal {
             },
             album4: {
                 title: 'Justiça Medieval',
+                cover: 'assets/img/album-4.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=MgG4YLamp7M&list=OLAK5uy_m5Piv_7kp_u3XHZPhhy-2URX1woJR9kVM',
                 spotify: 'https://open.spotify.com/album/5spU8aDa9uYaQiJRdDDiOZ?si=6YYRMT7oTIeNVrg3Vm2oaQ&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/justi%C3%A7a-medieval-single/1516362026',
@@ -34,6 +63,7 @@ class Modal {
             },
             album3: {
                 title: 'Faraós Fazem Festas',
+                cover: 'assets/img/album-3.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=PHsscQFT42A&list=OLAK5uy_mnmU2DDI_55kSrGE0he92qE_cDqYJbwQw',
                 spotify: 'https://open.spotify.com/album/7frkzErD7pbNeRHr2wiYFi?si=3DodDKOwSgyOZ-Z8_5yizA&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/fara%C3%B3s-fazem-festas-single/1471144047',
@@ -43,6 +73,7 @@ class Modal {
             },
             album2: {
                 title: 'Quebra Política',
+                cover: 'assets/img/album-2.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=grn_i3XfzoA&list=OLAK5uy_l9-k99D0g5Gm-Zj3GWloMzIigUhMrDp6o',
                 spotify: 'https://open.spotify.com/album/4fvdQgDV20sdVUuZNVP7Qz?si=xqDfsmWWT0mxmEsDQUZOfQ&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/quebra-pol%C3%ADtica-single/1471528706',
@@ -52,6 +83,7 @@ class Modal {
             },
             album1: {
                 title: 'Em Combate',
+                cover: 'assets/img/album-1.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=kVMoHhR-zjw',
                 spotify: 'https://open.spotify.com/album/3YyBmsz6iIn1MdQKRmxTrz?si=eGb9T9kzQ4GQttFXbyLMGA&dl_branch=1',
                 apple: 'https://music.apple.com/us/artist/sedicao/1471144048',
@@ -61,7 +93,7 @@ class Modal {
             },
         };
 
-        const service = product ?? 'profile';
+        const service = product;
 
         streaming_youtube.href = products[service].youtube;
         streaming_spotify.href = products[service].spotify;
@@ -70,11 +102,12 @@ class Modal {
         streaming_amazon.href = products[service].amazon;
         streaming_tidal.href = products[service].tidal;
         service_title.innerHTML = products[service].title;
+        service_cover.src = products[service].cover;
 
         this.toggleModal();
     }
 }
 
 window.onload = () => {
-    Modal.toggleModal();
+    Modal.handleURL();
 }
