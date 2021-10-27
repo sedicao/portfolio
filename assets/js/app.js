@@ -33,7 +33,7 @@ class Modal {
             },
             album6: {
                 title: 'Amor Fati',
-                cover: 'assets/img/album-6.jpeg',
+                cover: '../img/album-6.jpeg',
                 youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mcOyGUii9-yVZ00iOagjzQ6fa5keriLEY',
                 spotify: 'https://open.spotify.com/album/2zCBWSDsIYw3zirPF6hjRa',
                 apple: 'https://music.apple.com/br/album/amor-fati-single/1591751540?l=en',
@@ -43,7 +43,7 @@ class Modal {
             },
             album5: {
                 title: 'Plebiscito Letal',
-                cover: 'assets/img/album-5.jpeg',
+                cover: '../img/album-5.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=fZ9cD7dprUA&list=OLAK5uy_nqWXjF9exmD3uGH0Q1YNG36myR3d9H9hg',
                 spotify: 'https://open.spotify.com/album/79Fiy6s7qzGZaUOZnmH37u?si=BabIyXxrRFeX5wZUZT-IEA&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/plebiscito-letal/1537421460',
@@ -53,7 +53,7 @@ class Modal {
             },
             album4: {
                 title: 'Justiça Medieval',
-                cover: 'assets/img/album-4.jpeg',
+                cover: '../img/album-4.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=MgG4YLamp7M&list=OLAK5uy_m5Piv_7kp_u3XHZPhhy-2URX1woJR9kVM',
                 spotify: 'https://open.spotify.com/album/5spU8aDa9uYaQiJRdDDiOZ?si=6YYRMT7oTIeNVrg3Vm2oaQ&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/justi%C3%A7a-medieval-single/1516362026',
@@ -63,7 +63,7 @@ class Modal {
             },
             album3: {
                 title: 'Faraós Fazem Festas',
-                cover: 'assets/img/album-3.jpeg',
+                cover: '../img/album-3.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=PHsscQFT42A&list=OLAK5uy_mnmU2DDI_55kSrGE0he92qE_cDqYJbwQw',
                 spotify: 'https://open.spotify.com/album/7frkzErD7pbNeRHr2wiYFi?si=3DodDKOwSgyOZ-Z8_5yizA&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/fara%C3%B3s-fazem-festas-single/1471144047',
@@ -73,7 +73,7 @@ class Modal {
             },
             album2: {
                 title: 'Quebra Política',
-                cover: 'assets/img/album-2.jpeg',
+                cover: '../img/album-2.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=grn_i3XfzoA&list=OLAK5uy_l9-k99D0g5Gm-Zj3GWloMzIigUhMrDp6o',
                 spotify: 'https://open.spotify.com/album/4fvdQgDV20sdVUuZNVP7Qz?si=xqDfsmWWT0mxmEsDQUZOfQ&dl_branch=1',
                 apple: 'https://music.apple.com/us/album/quebra-pol%C3%ADtica-single/1471528706',
@@ -83,7 +83,7 @@ class Modal {
             },
             album1: {
                 title: 'Em Combate',
-                cover: 'assets/img/album-1.jpeg',
+                cover: '../img/album-1.jpeg',
                 youtube: 'https://www.youtube.com/watch?v=kVMoHhR-zjw',
                 spotify: 'https://open.spotify.com/album/3YyBmsz6iIn1MdQKRmxTrz?si=eGb9T9kzQ4GQttFXbyLMGA&dl_branch=1',
                 apple: 'https://music.apple.com/us/artist/sedicao/1471144048',
