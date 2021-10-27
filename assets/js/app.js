@@ -34,7 +34,7 @@ class Modal {
             album6: {
                 title: 'Amor Fati',
                 cover: './assets/img/album-6.jpeg',
-                youtube: 'https://www.youtube.com/playlist?list=OLAK5uy_mcOyGUii9-yVZ00iOagjzQ6fa5keriLEY',
+                youtube: 'https://www.youtube.com/watch?v=S7q4Vdu0TlA&list=OLAK5uy_mcOyGUii9-yVZ00iOagjzQ6fa5keriLEY',
                 spotify: 'https://open.spotify.com/album/2zCBWSDsIYw3zirPF6hjRa',
                 apple: 'https://music.apple.com/br/album/amor-fati-single/1591751540?l=en',
                 deezer: 'https://www.deezer.com/br/album/267732532',
