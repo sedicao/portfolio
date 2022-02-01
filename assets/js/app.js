@@ -6,6 +6,7 @@ class Modal {
     static handleURL() {
         const redirect = window.location.hash;
         const keys = {
+            por_cheque_mate: 'album7',
             amor_fati: 'album6',
             plebiscito_letal: 'album5',
             justica_medieval: 'album4',
@@ -30,6 +31,16 @@ class Modal {
                 deezer: 'https://www.deezer.com/br/artist/12822487',
                 amazon: 'https://music.amazon.com.br/artists/B07TWJ98HW/sedição',
                 tidal: 'https://listen.tidal.com/artist/16181550',
+            },
+            album6: {
+                title: 'Por Cheque, Mate!',
+                cover: './assets/img/album-7.jpeg',
+                youtube: 'https://www.youtube.com/watch?v=axAqPa3-2po',
+                spotify: 'https://open.spotify.com/album/5DNvjPzpROiEKQcEjN9dTL',
+                apple: 'https://music.apple.com/br/album/por-cheque-mate-single/1603639410',
+                deezer: 'https://www.deezer.com/br/album/285560652',
+                amazon: 'https://music.amazon.com/albums/B09PVLKYJK',
+                tidal: 'https://tidal.com/browse/album/211483519',
             },
             album6: {
                 title: 'Amor Fati',
